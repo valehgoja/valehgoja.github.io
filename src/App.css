@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+body{
+  background-color: rgb(128, 128, 128) !important;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(64, 64, 64);
+  box-shadow: 0px 2px 5px rgb(64, 64, 64);
+}
+
+.logo {
+  color: #fff;
+  margin-left: 25px;
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.navbarList {
+  margin-left: 40%;
+  list-style: none;
+  line-height: 80px;
+}
+
+.navbarList li {
+  display: inline;
+  color: rgb(120,120,120);
+
+  font-size: 25px;
+  margin-right: 40px;
+}
+
+.navbarList li:hover{
+  color: rgb(119, 118, 118);
+  transition: all 0.3s;
+  
+}
+.resume{
+position: fixed;
+width: 10%;
+height: 10%;
+background-color: rgb(128,128,128);
+margin-left: 85%;
+margin-top: 15%;
+color: rgb(200,200,200);
+cursor: pointer;
+font-size: 35px;
+border-radius: 10px;
+padding-left: 15px;
+}
+.resume:hover{
+  transform: scale(1.2);
+  transition: all .3s;
+}
+
+
+
+
+.menuIcon {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 70px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbarList {
+    margin-left: 30%;
+    line-height: 60px;
+  }
+  .navbar {
+    height: 60px;
+  }
+  .resume{
+    font-size: 27px;
+    padding-left: 12px;
+    
+  }
+
+  .logo {
+    margin-left: 20px;
+    font-size: 35px;
+    line-height: 60px;
+  }
+  .navbarList li {
+    font-size: 20px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbarList {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(180,180,180);
+    top: 42px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .resume{
+    font-size: 27px;
+    padding-left: 12px;
+    margin-left: 50%;
+    margin-top: 70vh;
+    width: 100px;
+  }
+  .show{
+    left:-30%;
+  }
+  .navbar {
+    height: 40px;
+  }
+
+  .logo {
+    margin-left: 15px;
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .navbarList li {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 40px;
+    color: rgb(120,120,120);
+
+    text-align: center;
+  }
+  .menuIcon {
+    display: block;
+    margin-left: 60%;
+  }
+}
+
+.navbarListItem{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ li.active{
+  text-decoration: none;
+text-decoration: underline rgba(255, 0, 0, 0.551);
+  color: #fff;
+}
+
+
+
+
+
+/*           /////////// HOME  ///////////                 */
+
+.bgHome{
+  width: 100%;
+  height: 86.4vh;
+  position: absolute;
+  z-index: -999;
+}
+.homeText{
+  margin-left: 35%;
+  margin-top: 10%;
+  position: fixed;
+  color: rgb(200,200,200);
+  width: 42%;
+  font-size: 55px;
+}
+@media screen and (max-width: 1023px) {
+  .bgHome{
+    width: 100%;
+    height: 88vh;
+  }
+  .homeText{
+    margin-top: 15%;
+    margin-left: 30%;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bgHome{
+    width: 100%;
+    height: 91.8vh;
+  }
+  .homeText{
+    margin-top: 20%;
+    margin-left: 25%;
+    font-size: 30px;
+  }
+}
+
+/*           /////////// About  ///////////                 */
+.aboutMain{
+  width: 70%;
+  height: 80vh;
+  background-color: #fff;
+  margin : 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px  4px rgba(255, 0, 0, 0.218);
+  padding-top: 20px;
+}
+
+.personalInfo{
+  width: 70%;
+  height: 40%;
+  border: 1.5px dashed rgb(64,64,64);
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
+.userLogo{
+  font-size: 120px;
+  color: rgb(64,64,64);
+  margin-top: 3.5%;
+  margin-left: 2.8%;
+}
+.userAbout{
+  float: right;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+
+.userAbout p{
+  font-size: 25px;
+  color: rgb(64,64,64);
+}
+
+.userAbout p:nth-child(1){
+  font-size: 45px;
+}
+.box{
+  display: flex;
+  margin-top: 20px;
+}
+.studyInfo{
+  width: 40%;
+  height: 20vh;
+  border: 1.5px dashed rgb(64,64,64);
+  border-radius: 10px;
+  margin: auto ;
+ }
+ 
+ .buildingLogo{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 50%;
+  color: rgb(64,64,64);
+ }
+
+ .box p{
+  text-align: center;
+  margin-top: 5px;
+ }
+
+
+@media  screen and (max-width : 1200px) {
+  .userLogo{
+    font-size: 100px;
+  }
+  
+  
+  .userAbout p{
+    font-size: 15px;
+  }
+  
+  .userAbout p:nth-child(1){
+    font-size: 35px;
+  }
+  .box p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .personalInfo{
+    height: 35%;
+  }
+  
+  .userLogo{
+    font-size: 100px;
+  }
+  .userAbout{
+    margin-right: 15%;
+    margin-top: 3%;
+  }
+  
+  .userAbout p{
+    font-size: 15px;
+  }
+  
+  .userAbout p:nth-child(1){
+    font-size: 35px;
+  }
+
+
+
+  .box{
+    display: block;
+  }
+  .studyInfo{
+    width: 70%;
+    height: 20vh;
+    margin: auto ;
+    margin-top: 10px;
+   }
+   
+   .buildingLogo{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50%;
+  }
+  .box p{
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .personalInfo{
+    height: 25%;
+  }
+  
+  .userLogo{
+    font-size: 70px;
+  }
+  .userAbout{
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+  
+  .userAbout p{
+    font-size: 12px;
+  }
+  
+  .userAbout p:nth-child(1){
+    font-size: 25px;
+  }
+
+  .box{
+    display: block;
+    margin-top: 10px;
+  }
+  .studyInfo{
+    width: 70%;
+    height: 20vh;
+    margin-top: 10px;
+   }
+   
+   .buildingLogo{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 50%;
+  }
+  .box p{
+    font-size: 10px;
+  }
+}
+
+
+/*           /////////// Services  ///////////                 */
+
+.mainServicesDiv{
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+ margin: 10px auto;
+}
+
+.card{
+  margin: 30px !important;
+}
+
+.cardHeader{
+  text-align: center !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainServicesDiv{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainServicesDiv{
+    display: block;
+    margin-left: 16%;
+    width: 95%;
+  }
+}
+
+
+/*                      ////////////////// Services ////////////////////                 */
+
+.container{
+  display: flex;
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  margin-top: 10%;
+}
+
+.cards{
+  height: 25vh;
+  flex :1;
+  transition: all .3s;
+  background-color: red;
+  margin: 7px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(156,156,156);
+}
+
+.cards:hover{
+  flex :2;
+}
+
+.contactLogo{
+  font-size: 100px;
+  color: #fff;
+  padding: 20px;
+}
+.contactLogo:hover{
+transform: scale(1.2);
+transition: all .3s;
+}
+.whatsapp{
+  background-color: rgb(5, 158, 5);
+}
+
+.facebook{
+  background-color: rgb(24, 24, 255)
+}
+
+.gmail{
+  background-color: rgb(255, 3, 3);
+}
+
+.linkedn{
+  background-color: rgb(0, 27, 107);
+}
+
+.git{
+  background-color: black;
+}
+.whatsapp:hover{
+  background-color: rgb(56, 167, 56);
+}
+
+.facebook:hover{
+  background-color: rgb(80, 80, 253)
+}
+
+.gmail:hover{
+  background-color: rgb(250, 65, 65);
+}
+
+.linkedn:hover{
+  background-color: rgb(27, 48, 111);
+}
+
+.git:hover{
+  background-color: rgb(58, 58, 58);
+}
+
+@media screen and (max-width: 1200px) {
+  .cards{
+    height: 20vh;
+  }
+  .container{
+    width: 80%;
+  }
+  .contactLogo{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards{
+    height: 20vh;
+    
+  }
+  .container{
+  width: 60%;
+  display: block;
+  }
+  .cards:hover{
+    height: 25vh;
+  }
+  .contactLogo{
+    font-size: 70px;
+  }
+
+}
